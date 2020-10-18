@@ -1,5 +1,5 @@
 # Project 3 Assignment 
-My project 3 assignment results can be seen in diretory word_language_model. 
+My project 3 assignment results can be seen in [word_language_model](word_language_model). 
 # PyTorch Examples
 ![Run Examples](https://github.com/pytorch/examples/workflows/Run%20Examples/badge.svg)
 
