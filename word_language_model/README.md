@@ -1,3 +1,17 @@
+# Project 3 assignment
+## Training RNN on Windows
+At first I directly train the RNN model on my own computer. It told me that my cuda version is too old (cuda 8.0) so I trained it using CPU, which is extremelly slow.
+
+<p align="left">
+  <img src="Project 3/picture/epoch1_win.PNG" width=500>
+</p>
+<p align="left">
+  <img src="Project 3/picture/epoch6_win.PNG" width=500>
+</p>
+
+For each epoch, it took me more than 2000s. If I want to train 40 epochs, it will take nearly 24h.
+
+
 # Word-level language modeling RNN
 
 This example trains a multi-layer RNN (Elman, GRU, or LSTM) on a language modeling task.
