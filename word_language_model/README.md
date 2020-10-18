@@ -5,12 +5,47 @@ At first I directly train the RNN model on my own computer. It told me that my c
 <p align="left">
   <img src="Project 3/picture/epoch1_win.PNG" width=500>
 </p>
+
 <p align="left">
   <img src="Project 3/picture/epoch6_win.PNG" width=500>
 </p>
 
 For each epoch, it took me more than 2000s. If I want to train 40 epochs, it will take nearly 24h.
 
+## Training RNN on SCC
+I used ssh MobaXterm connecting to SCC.
+```
+module load python3
+module load cuda
+module load pytorch
+```
+I think one of the advantages of using SCC is that you don't need to download various softwares to configure your environment. You just simply load required modules then you can run your program.
+```
+qrsh -l gpus=1 -l gpu_type=P100
+```
+Then I applied for a P100 gpu for my training process, which could hold for 12 hours.
+You can also submit your program to batches and get results back.
+```
+qsub -l gpus=1 -l gpu_type=P100 <your command>
+```
+
+The training speed is totally different from that on windows.
+
+<p align="left">
+  <img src="Project 3/picture/epoch1_scc.PNG" width=500>
+</p>
+
+<p align="left">
+  <img src="Project 3/picture/epoch6_scc.PNG" width=500>
+</p>
+
+You can find that each epoch only need averagely 45s, which is nearly 50× speechup. From this I understand the big differences in computing capability between GPU and CPU.
+
+Then I generated [results](Project3/generated_scc_6epochs.txt). 
+
+<p align="left">
+  <img src="Project 3/picture/generated_scc.PNG" width=200>
+</p>
 
 # Word-level language modeling RNN
 
