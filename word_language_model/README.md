@@ -11,6 +11,7 @@ At first I directly train the RNN model on my own computer. It told me that my c
 </p>
 
 For each epoch, it took me more than 2000s. If I want to train 40 epochs, it will take nearly 24h.
+
 In the training process we can see that training loss decreased quickly, validation loss decreased slowly, but they both decreased, demonstrating that the model is training normally. The final test loss is 4.95, which is smalled than traing loss and validation loss.
 
 ## Training RNN on SCC
@@ -25,6 +26,7 @@ I think one of the advantages of using SCC is that you don't need to download va
 qrsh -l gpus=1 -l gpu_type=P100
 ```
 Then I applied for a P100 gpu for my training process, which could hold for 12 hours.
+
 You can also submit your program to batches and get results back.
 ```
 qsub -l gpus=1 -l gpu_type=P100 <your command>
@@ -67,6 +69,7 @@ In the training I find that the learning rate decreased following below rule.
 |lr|20|5|1.25|0.31|0.08|0.02|
 
 The learning rate decreased by 4× each time, which means that as the training goes deeper, the learning rate need to slow down to avoid gradient decreasing too fast.
+
 Another thing that we can see is that training loss, validation loss and testing loss are all smaller than results in epochs 6 training, which means our model is better than last one.
 
 ## Pretrained models
