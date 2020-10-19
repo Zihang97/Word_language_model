@@ -29,7 +29,7 @@ You can also submit your program to batches and get results back.
 ```
 qsub -l gpus=1 -l gpu_type=P100 <your command>
 ```
-
+### Train with 6 epochs
 The training speed is totally different from that on windows.
 
 <p align="left">
@@ -48,6 +48,8 @@ Then I generated [results](Project3/generated_scc_6epochs.txt).
   <img src="Project 3/picture/generated_scc.PNG" width=200>
 </p>
 
+
+### Train with 40 epochs
 I also trained a slower but better model with 0.5 dropout and 40 epochs which has word embedding size 650 rather than 200 and 650 hidden units per layer instead of 200.
 
 <p align="left">
@@ -60,6 +62,14 @@ I also trained a slower but better model with 0.5 dropout and 40 epochs which ha
 
 In the training I find that the learning rate decreased following below rule.
 
+|epochs|1-10|11-18|19-23|24-28|29-37|38-40|
+|------|----|-----|-----|-----|-----|-----|
+|lr|20|5|1.25|0.31|0.08|0.02|
+
+The learning rate decreased by 4× each time, which means that as the training goes deeper, the learning rate need to slow down to avoid gradient decreasing too fast.
+Another thing that we can see is that training loss, validation loss and testing loss are all smaller than results in epochs 6 training, which means our model is better than last one.
+
+## Pretrained models
  
 # Word-level language modeling RNN
 
