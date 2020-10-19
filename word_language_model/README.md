@@ -12,7 +12,7 @@ At first I directly train the RNN model on my own computer. It told me that my c
 
 For each epoch, it took me more than 2000s. If I want to train 40 epochs, it will take nearly 24h.
 
-In the training process we can see that training loss decreased quickly, validation loss decreased slowly, but they both decreased, demonstrating that the model is training normally. The final test loss is 4.95, which is smalled than traing loss and validation loss.
+In the training process we can see that training loss decreased quickly, validation loss decreased slowly, but they both decreased, demonstrating that the model is training normally. The final test loss is 4.95, which is smalled than traing loss and validation loss. The generated results can be seen [here](Project3/generated_win.txt).
 
 ## Training RNN on SCC
 I used ssh MobaXterm connecting to SCC.
@@ -72,7 +72,6 @@ The learning rate decreased by 4× each time, which means that as the training g
 
 Another thing that we can see is that training loss, validation loss and testing loss are all smaller than results in epochs 6 training, which means our model is better than last one.
 
-## Pretrained models
  
 # Word-level language modeling RNN
 
