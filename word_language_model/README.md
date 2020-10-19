@@ -48,6 +48,19 @@ Then I generated [results](Project3/generated_scc_6epochs.txt).
   <img src="Project 3/picture/generated_scc.PNG" width=200>
 </p>
 
+I also trained a slower but better model with 0.5 dropout and 40 epochs which has word embedding size 650 rather than 200 and 650 hidden units per layer instead of 200.
+
+<p align="left">
+  <img src="Project 3/picture/epoch1_40_scc.PNG" width=500>
+</p>
+
+<p align="left">
+  <img src="Project 3/picture/epoch40_scc.PNG" width=500>
+</p>
+
+In the training I find that the learning rate decreased following below rule.
+
+ 
 # Word-level language modeling RNN
 
 This example trains a multi-layer RNN (Elman, GRU, or LSTM) on a language modeling task.
