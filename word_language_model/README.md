@@ -72,6 +72,8 @@ The learning rate decreased by 4× each time, which means that as the training g
 
 Another thing that we can see is that training loss, validation loss and testing loss are all smaller than results in epochs 6 training, which means our model is better than last one.
 
+[Here](https://www.dropbox.com/s/dzygme0bwcn9ykq/model_scc_40epochs.pt?dl=0) is the pretrained model that I trained.
+
  
 # Word-level language modeling RNN
 
