@@ -52,7 +52,7 @@ Then I generated [results](Project3/generated_scc_6epochs.txt).
 
 
 ### Train with 40 epochs
-I also trained a slower but better model with 0.5 dropout and 40 epochs which has word embedding size 650 rather than 200 and 650 hidden units per layer instead of 200.
+I also trained a slower but better model with 0.5 dropout and 40 epochs which has word embedding size 650 rather than 200 and 650 hidden units per layer instead of 200. The generated results can be found [here](Project3/generated_scc_40epochs.txt).
 
 <p align="left">
   <img src="Project 3/picture/epoch1_40_scc.PNG" width=500>
